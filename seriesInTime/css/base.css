@@ -1,0 +1,585 @@
+body {
+    color: #FFF;
+    background-color: #000000;
+    font-family: arial, sans-serif;
+    margin: 0;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #BF1A1A;
+    height: 50px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 100px;
+}
+
+.searchBox {
+    padding: 20px;
+    text-align: center;
+    width: 73%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.searchDiv {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.searchDiv:hover {
+    text-decoration: underline;
+}
+
+.seasonsBox {
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid #000000;
+    background-color: #BF1A1A;
+    cursor: pointer;
+    text-align: center;
+    width: 70%;
+}
+
+.singleBox {
+    cursor: pointer;
+    text-align: center;
+}
+
+.singleBox:hover {
+    text-decoration: underline;
+}
+
+.locandina {
+    cursor: pointer;
+    height: 300px;
+    width: auto;
+}
+
+div.owl-item.item {
+    width: auto;
+}
+
+.option {
+    border-radius: 0;
+}
+
+.tvshows {
+    display: inline-block;
+    height: 100px;
+}
+
+.seasonTray {
+    display: none;
+    margin-left: 40%;
+}
+
+.episodesLabel {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.navbarRight {
+    float: right;
+    margin-top: 2px;
+}
+
+.owl-item {
+    height: 350px;
+}
+
+.btn-go {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background: #FFFFFF;
+    background-image: url("../images/search.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+    border: 2px solid #FFFFFF;
+    cursor: pointer;
+}
+
+.input-group-btn {
+    margin-top: 6px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.owl-carousel {
+    margin-top: 50px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+    color: #FFFFFF;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: #BF1A1A;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.owl-carousel .owl-item img {
+    display: block;
+    width: auto;
+}
+
+.singleBox {
+    width: 190px;
+}
+
+.label-check {
+    cursor: pointer;
+}
+
+#view-episode {
+    position: relative;
+    bottom: 445px;
+}
+
+#text {
+    height: 100px;
+    width: 60%;
+    overflow: auto;
+    position: relative;
+    bottom: 540px;
+    left: 200px;
+}
+
+#closeInfo {
+    display: inline-block;
+    top: -15px;
+    width: 18px;
+    left: 97.7%;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#closeSearch {
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    width: 18px;
+    z-index: 1;
+    left: 97.5%;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+}
+
+#img {
+    width: 150px;
+}
+
+#image{
+    border-top-left-radius: 50%;
+    left: -1px;
+    top: -41px;
+    position: relative;
+    width: 200px;
+}
+
+#poster {
+    border-top-left-radius: 10px;
+}
+
+
+#search-result {
+    max-height: 45px;
+    display: none;
+    background-color: #BF1A1A;
+    overflow: hidden;
+    -webkit-transition: max-height 4s;
+    transition: max-height 4s;
+}
+
+#search-result:hover {
+    display: none;
+    background-color: #BF1A1A;
+    height: auto;
+    max-height: 4000px;
+}
+
+#infoBox {
+    background-color: #BF1A1A;
+    position: fixed;
+    top: 60px;
+    left: 50px;
+    width: 90%;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #BF1A1A;
+    display: none;
+    height: 80%;
+    z-index: 3;
+}
+
+#infoContent {
+    position: relative;
+    width: 100%;
+    top: 20px;
+    margin-top:0px;
+    margin-left: 0px;
+    margin-right: 0px
+}
+
+#logo {
+    width: 160px;
+    position: absolute;
+    top: 10px;
+    left: 43%;
+}
+
+#title {
+    position: relative;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+    top: -310px;
+    left: 200px;
+}
+
+#pop {
+    position: relative;
+    left: 550px;
+    top: -182px;
+}
+
+#vote {
+    position: relative;
+    left: 550px;
+    top: -182px;
+}
+
+#stats {
+    position: relative;
+    top: -150px;
+}
+
+#result {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#notavailablevideo {
+    width: 220px;
+    height: 112.5px;
+}
+
+#status {
+    position: relative;
+    top: -100px;
+    left: -310px;
+}
+
+
+#video {
+    position: relative;
+    left: 80%;
+    width: 200px;
+    bottom: 430px;
+}
+
+#calculate {
+    position: fixed;
+    bottom: 100px;
+    left: 83%;
+}
+
+#thumb {
+    width: 200px;
+    border: 3px solid #FFFFFF;
+    border-radius: 5px;
+}
+
+#yticon {
+    position: absolute;
+    width: 50px;
+    right: 70px;
+    top: 35px;
+}
+
+#season-episode {
+    position: relative;
+    bottom: 220px;
+    left: 200px;
+}
+
+#season {
+    display: inline-block;
+}
+
+#episode {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#genre {
+    position: relative;
+    top: -200px;
+    left: 200px;
+}
+
+#network {
+    position: relative;
+    top: -220px;
+    left: 800px;
+}
+
+#home {
+    position: relative;
+    top: -277.5px;
+    left: 800px;
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+#home a {
+    color: #FFFFFF;
+}
+
+#overview-episode {
+    width: 80%;
+    height: 200px;
+    overflow: auto;
+    left: 50px;
+    position: relative;
+}
+
+#view-episode {
+    margin-top: 15px;
+}
+
+#closeCalculate {
+    top: 10px;
+    width: 18px;
+    left: 97%;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#infoBoxCalculate{
+    background-color: #BF1A1A;
+    position: fixed;
+    top: 9%;
+    left: 10.5%;
+    width: 80%;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #BF1A1A;
+    display: none;
+    height: 45%;
+    z-index: 3;
+    text-align: center;
+    padding-top: 20%;
+}
+
+select#dropdown, select#dropdown-episodes {
+    -webkit-appearance: button;
+    -webkit-border-radius: 2px;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    -webkit-padding-end: 20px;
+    -webkit-padding-start: 2px;
+    -webkit-user-select: none;
+    background-image: url("../images/arrow.png"), -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+    background-position: 97% center;
+    background-repeat: no-repeat;
+    border: 1px solid #AAAAAA;
+    color: #555555;
+    font-size: inherit;
+    margin: 20px;
+    overflow: hidden;
+    padding: 5px 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 350px;
+    cursor: pointer;
+    color: #000000;
+    margin-top: 30px;
+}
+
+#calculate {
+    width: 70%;
+    padding: 10px;
+}
+
+#calculate-group {
+    text-align: center;
+}
+
+#go-btn {
+    padding: 12.2px;
+    border-radius: 0px;
+    position: relative;
+    left: 4px;
+}
+
+#calculate-btn {
+    padding: 12px;
+    border-radius: 50px;
+    text-align: center;
+    position: relative;
+    top: 90%;
+    left: 90%;
+    font-size: 15px;
+    background-color: #BF1A1A;
+    color: #FFFFFF;
+    border: 2px solid #BF1A1A;
+    position: fixed;
+}
+
+#calculate-btn:hover {
+    background-color: #869791;
+    color: #FFFFFF;
+    border: 2px solid #869791;
+}
+
+#dimScreen {
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#dimScreen2 {
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 4;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#mainContainer {
+    position: relative;
+}
+
+#button-div {
+    text-align: center;
+}
+
+#search-btn {
+    padding: 8px;
+    border-radius: 20px;
+    width: 120px;
+    -webkit-transition: width 1s;
+    transition: width 1s;
+    border: 2px solid #FFFFFF;
+}
+
+#search-btn:focus {
+    width: 300px;
+}
+
+#overview-episode {
+    display: none;
+}
+
+#calculate {
+    cursor: pointer;
+}
+
+#title-calc {
+    text-align: center;
+    padding-top: 281px;
+    width: 70%;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+#title-calc-span {
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 40px;
+}
+
+#copyright {
+    float: left;
+}
+
+#names {
+    float: right;
+}
+
+#max-episodes-container {
+    width: 70%;
+    margin: 0 auto;
+    height: 100px;
+}
+
+#seasons-result {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#max-episodes {
+    width: 30%;
+    height: 30px;
+    border: 2px solid #FFFFFF;
+    display: block;
+    margin: 0 auto;
+}
+
+#max-episodes-description {
+    width: 30%;
+    margin: 20px auto;
+}
+
+#days-result {
+    display: none;
+}

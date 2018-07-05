@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+	<head>
+        <link href="css/base.css" rel="stylesheet" type="text/css"/>
+        <title>Calculate</title>
+		<link rel="icon" href="images/favicon.ico"/>
+    </head>
+
+    <body>
+		<div id="img-bg"></div>
+		<div id="title-calc"></div>
+		<div id="max-episodes-container">
+			<div id="max-episodes-description">Max episodes per day: </div>
+			<input autocomplete="off" min="1" id="max-episodes" type="number" placeholder="Numeri di episodi..." class="form-control">
+		<div>
+        <div id = "seasons-result"></div>
+        <div id = "episodes-result"></div>
+        <div id="button-div"><button id="calculate-btn">CALCULATE!</button></div>
+		<div id="infoBoxCalculate">
+            <div id="closeCalculate">X</div>
+			<div id="resul-content">The marathon will take you: </div>
+			<div id="result"></div>
+			<div id="days-result">With a maximum of <span id="span-max-episodes"></span> episodes per day your marathon will last <span id="span-days"></span> days.</div>
+		</div>
+		<footer><span id="copyright">© Series In Time 2017</span><span id="names">Giona De Bernardi, Daniele Keller, Lucia Maj.</span></footer>
+
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/calculate.js"></script>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Series in Time</title>
+		<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+		<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+        <link href="css/base.css" rel="stylesheet" type="text/css"/>
+		<link rel="icon" href="images/favicon.ico"/>
+	</head>
+
+	<body>
+		<div id="mainContainer">
+			<ul>
+				<li>
+					<span class="input-group-btn">
+						<button class="btn-go" type="button" onclick="searchFunc()"></button>
+						<input autocomplete="off" id="search-btn" type="text" class="form-control" placeholder="Search a TV show...">
+					</span>
+				</li>
+				<img id="logo" src="images/seriesintime.png">
+				<li class="navbarRight"><a href="#car3">3</a></li>
+				<li class="navbarRight"><a href="#car2">2</a></li>
+				<li class="navbarRight"><a href="#car1">1</a></li>
+			</ul>
+			<div id="search-result"></div>
+			<div class="owl-carousel owl-theme" id="car1"></div>
+			<div class="owl-carousel owl-theme" id="car2"></div>
+			<div class="owl-carousel owl-theme" id="car3"></div>
+		</div>
+		<div id="infoBox">
+			<div id="infoContent">
+				<div class="closeBtn" id="closeInfo">X</div>
+				<div id="bgDiv"></div>
+				<div id="image"></div>
+				<div id="title"></div>
+				<div id="stats">
+					<div id="pop"></div>
+					<div id="vote"></div>
+				</div>
+				<div id="status"></div>
+				<div id="season-episode">
+					<div id="season"></div>
+					<div id="episode"></div>
+				</div>
+				<div id="genre"></div>
+				<div id="network"></div>
+				<div id="home"></div>
+				<div id="video"></div>
+				<div id="text"></div>
+				<div id="view-episode">
+					<select class="drop" id="dropdown" onchange="episodeSelect()"></select>
+					<select class="drop" id="dropdown-episodes" onchange="showOverview()"></select>
+					<div id="overview-episode"></div>
+				</div>
+				<div id="calculate"></div>
+			</div>
+        </div>
+		<div id="dimScreen"></div>
+		<footer><span id="copyright">© Series In Time 2017</span><span id="names">Giona De Bernardi, Daniele Keller, Lucia Maj.</span></footer>
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="owlcarousel/owl.carousel.min.js"></script>
+        <script src="js/main.js"></script>
+		<script src="js/carousel.js"></script>
+    </body>
+</html>
